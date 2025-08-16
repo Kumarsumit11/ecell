@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff6eb;
+  border-bottom: 1px solid #f0e0d0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff8c42;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #ff8c42;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #fff3e6;
+}
+
+.about-box {
+  max-width: 800px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+.about-box .hello {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about-box h3 {
+  font-size: 2rem;
+  color: #ff8c42;
+  margin-bottom: 20px;
+}
+
+.about-box h3 span {
+  color: #ff7043;
+}
+
+.about-box .desc {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-box {
+  background: #fff6eb;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffd59e;
+}
+
+.contact-box h4 {
+  margin-bottom: 15px;
+  color: #ff8c42;
+}
+
+.contact-box p {
+  margin: 6px 0;
+}
+
+.contact-box a {
+  color: #ff7043;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+/* Nav base style */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect with underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #ff8c42;
+  transition: width 0.3s;
+}
+
+nav a:hover {
+  color: #ff8c42;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Active page */
+nav a.active {
+  color: #ff8c42;
+  font-weight: bold;
+}
+
+nav a.active::after {
+  width: 100%;
+}

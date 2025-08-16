@@ -1,0 +1,128 @@
+body {
+  background-color: #fffaf0;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #ff8c42;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card button {
+  background-color: #ff8c42;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff8c42;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.restaurant-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.02);
+}
+
+.restaurant-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-right: 2px solid #f5b45c;
+}
+
+.restaurant-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.restaurant-info h3 {
+  margin-top: 0;
+  color: #ff7e1a;
+}
+
+.place-order-btn {
+  background-color: #ff7e1a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #e56c00;
+}
+.ngo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px 20px;
+}
+
+.ngo-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.post-order-btn {
+  background-color: #ff7e1a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.post-order-btn:hover {
+  background-color: #e96b00;
+}
+
